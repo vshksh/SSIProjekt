@@ -5,4 +5,4 @@
  * @author Jeremiasz
  *
  */
-package controllers;
+package dataTransferObjects;

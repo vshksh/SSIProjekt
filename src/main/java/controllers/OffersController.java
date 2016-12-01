@@ -8,17 +8,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class IndexController{
+public class OffersController{
 	
 	@Autowired
 	DataSource dataSource;
 
-	@RequestMapping("/")
-    public ModelAndView greeting() {
+	@RequestMapping("/oferty")
+    public ModelAndView showUserPanel() {
 		
-		ModelAndView returnedView = new ModelAndView();
+		ModelAndView returnedView = new ModelAndView();      
+		
+		//JdbcTemplate jt = new JdbcTemplate(dataSource);
+		//String oferty = jt.queryForObject("query", String.class);
+		
+		//returnedView.addObject("message", "hello");
 
-		returnedView.setViewName("index");
+		returnedView.setViewName("oferty");
 		return returnedView;
     }
 

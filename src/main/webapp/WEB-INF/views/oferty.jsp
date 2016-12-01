@@ -21,7 +21,10 @@
   </ul>
 </div>
 
-<h1>Witamy na stronie naszego super hostelu!</h1>
+<b>Strona w budowie</b>
+
+<li>Na tej stronie będziecie mogli zobaczyć, jak przedstawiają się nasze oferty.</li>
+<li>Zapraszamy już wkrótce!</li>
 
 </body>
 </html>

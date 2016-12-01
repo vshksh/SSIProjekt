@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class IndexController{
+public class UserPanelController{
 	
 	@Autowired
 	DataSource dataSource;
 
-	@RequestMapping("/")
-    public ModelAndView greeting() {
+	@RequestMapping("/zalogowano")
+    public ModelAndView showUserPanel() {
 		
-		ModelAndView returnedView = new ModelAndView();
+		ModelAndView returnedView = new ModelAndView();      
 
-		returnedView.setViewName("index");
+		returnedView.setViewName("zalogowano");
 		return returnedView;
     }
 

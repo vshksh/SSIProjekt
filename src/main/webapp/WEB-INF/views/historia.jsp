@@ -21,7 +21,6 @@
   </ul>
 </div>
 
-<h1>Witamy na stronie naszego super hostelu!</h1>
-
+<b>Strona w budowie</b>
 </body>
 </html>
