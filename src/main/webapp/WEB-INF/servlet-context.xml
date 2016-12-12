@@ -23,6 +23,7 @@
  <mvc:annotation-driven/>
  <tx:annotation-driven />
  <jpa:repositories base-package="controllers, config"/>
+ <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"><!--Tworzenie nowego beana tej klasy-->
     <property name="prefix">
