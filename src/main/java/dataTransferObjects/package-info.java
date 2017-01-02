@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author Jeremiasz
- *
- */
-package dataTransferObjects;
