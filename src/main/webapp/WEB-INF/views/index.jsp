@@ -7,9 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Strona główna</title>
-<link href="<c:url value="/resources/css/bootstrap.min.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/bootstrap.min.css" />"	rel="stylesheet">
+	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+	<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
+	<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+	<script src="<c:url value="/resources/js/scripts.js" />"></script>
 </head>
 <body>
 
@@ -176,9 +178,6 @@
 		</div>
 	</div>
 
-	<script src="/resources/js/jquery.min.js"></script>
-	<script src="/resources/js/bootstrap.min.js"></script>
-	<script src="/resources/js/scripts.js"></script>
 
 </body>
 </html>
