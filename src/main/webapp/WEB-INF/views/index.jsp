@@ -7,11 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Strona główna</title>
-	<link href="<c:url value="/resources/css/bootstrap.min.css" />"	rel="stylesheet">
-	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-	<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
-	<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-	<script src="<c:url value="/resources/js/scripts.js" />"></script>
+<link href="<c:url value="/resources/css/bootstrap.min.css" />"
+	rel="stylesheet">
+<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 </head>
 <body>
 
@@ -27,30 +25,30 @@
 							class="icon-bar"></span><span class="icon-bar"></span><span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/hostel/">Stron główna</a>
+					<a class="navbar-brand" href="/hostel/">Strona główna</a>
 				</div>
 
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="<c:url value="/oferty" />">Oferty</a>
-						</li>
+						<li><a href="<c:url value="/oferty" />">Oferty</a></li>
+						<li><a href="<c:url value="/kontakt" />">Kontakt</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<c:url value="/rejestracja" />">Rejestracja</a>
 						</li>
-						<li><a href="<c:url value="/rejestracja" />">Zaloguj</a></li>
+						<li><a href="<c:url value="/logowanie" />">Zaloguj</a></li>
 					</ul>
 				</div>
 
 				</nav>
 				<div class="page-header">
 					<h1>
-						Super hostel! <small>Dla Ciebie, dla rodziny</small>
+						Super Hostel! <small>Dla Ciebie, dla rodziny</small>
 					</h1>
 				</div>
 				<div class="jumbotron">
-					<p>Witamy na stronie naszego super hostelu. Zapoznaj się z
+					<p>Witamy na stronie naszego hostelu. Zapoznaj się z
 						proponowanymi ofertami ponizej, bądź skorzystaj z wyszukiwarki.</p>
 				</div>
 				<div class="row">
@@ -65,9 +63,9 @@
 							<div class="carousel-inner">
 								<div class="item active">
 									<img alt="Carousel Bootstrap First"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg">
+										src="http://ucd.hwstatic.com/propertyimages/9/90278/1.jpg">
 									<div class="carousel-caption">
-										<h4>First Thumbnail label</h4>
+										<h4>Pokój 1</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -75,9 +73,9 @@
 								</div>
 								<div class="item">
 									<img alt="Carousel Bootstrap Second"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg">
+										src="http://ucd.hwstatic.com/propertyimages/6/65464/4.jpg">
 									<div class="carousel-caption">
-										<h4>Second Thumbnail label</h4>
+										<h4>Pokój 2</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -85,9 +83,9 @@
 								</div>
 								<div class="item">
 									<img alt="Carousel Bootstrap Third"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg">
+										src="http://ucd.hwstatic.com/propertyimages/1/15170/30.jpg">
 									<div class="carousel-caption">
-										<h4>Third Thumbnail label</h4>
+										<h4>Pokój 3</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -111,9 +109,9 @@
 							<div class="carousel-inner">
 								<div class="item active">
 									<img alt="Carousel Bootstrap First"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg">
+										src="http://www.3darchprevision.com/wp-content/uploads/2013/09/3D-Rendition-Students-Hostel-Room-Interior-Visualization.jpg">
 									<div class="carousel-caption">
-										<h4>First Thumbnail label</h4>
+										<h4>Pokój 4</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -121,9 +119,9 @@
 								</div>
 								<div class="item">
 									<img alt="Carousel Bootstrap Second"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg">
+										src="http://www.hoppo.com/assets/0000/0213/Bunk_Dorm_Room.JPG">
 									<div class="carousel-caption">
-										<h4>Second Thumbnail label</h4>
+										<h4>Pokój 5</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -131,9 +129,9 @@
 								</div>
 								<div class="item">
 									<img alt="Carousel Bootstrap Third"
-										src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg">
+										src="http://www.nobelhostel.com/img/double-shared/double-shared-2.png">
 									<div class="carousel-caption">
-										<h4>Third Thumbnail label</h4>
+										<h4>Pokój 6</h4>
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 											quam. Donec id elit non mi porta gravida at eget metus.
 											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -148,6 +146,7 @@
 								class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
 					</div>
+
 					<div class="col-md-5">
 						<h3 class="text-right">Wypełnij kryteria wyszukiwania</h3>
 						<form class="form-horizontal" role="form">
@@ -163,13 +162,9 @@
 								<div class="col-sm-10">
 									<input type="text" class="form-control" id="inputEmail3">
 								</div>
-								<label for="inputEmail3" class="col-sm-2 control-label">
-									itd </label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="inputEmail3">
-								</div>
 							</div>
 						</form>
+</div>
 
 						<button type="button" class="btn btn-default">Szukaj</button>
 					</div>
@@ -178,6 +173,9 @@
 		</div>
 	</div>
 
+	<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
+	<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+	<script src="<c:url value="/resources/js/scripts.js" />"></script>
 
 </body>
 </html>

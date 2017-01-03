@@ -4,3 +4,32 @@
 {
 	width: 95%;
 }
+
+
+
+.div-form
+{
+	width: 50%;
+	margin: 0 auto; 
+
+}
+
+.carousel-inner
+{
+		margin-top: 10px; 
+		margin-bottom: 10px; 
+}
+
+.carousel-caption
+{
+	right: 40%;
+	background: rgba(200, 54, 54, 0.5);
+}
+
+
+.carousel-indicators
+{
+	left: 40%;
+	right: 40%;
+}
+							
