@@ -4,14 +4,6 @@ import java.sql.Date;
 
 public class OffersDTO
 {
-	int id;
-	String nazwa;
-	String opis;
-	int cena;
-	Date dataStart;
-	Date dataKoniec;
-	int idPokoju;
-	
 	public int getId() {
 		return id;
 	}
@@ -24,11 +16,11 @@ public class OffersDTO
 	public void setNazwa(String nazwa) {
 		this.nazwa = nazwa;
 	}
-	public String getOpis() {
-		return opis;
+	public String getLink() {
+		return link;
 	}
-	public void setOpis(String opis) {
-		this.opis = opis;
+	public void setLink(String link) {
+		this.link = link;
 	}
 	public int getCena() {
 		return cena;
@@ -36,23 +28,16 @@ public class OffersDTO
 	public void setCena(int cena) {
 		this.cena = cena;
 	}
-	public Date getDataStart() {
-		return dataStart;
-	}
-	public void setDataStart(Date dataStart) {
-		this.dataStart = dataStart;
-	}
-	public Date getDataKoniec() {
-		return dataKoniec;
-	}
-	public void setDataKoniec(Date dataKoniec) {
-		this.dataKoniec = dataKoniec;
-	}
 	public int getIdPokoju() {
 		return idPokoju;
 	}
 	public void setIdPokoju(int idPokoju) {
 		this.idPokoju = idPokoju;
 	}
+	int id;
+	String nazwa;
+	String link;
+	int cena;
+	int idPokoju;
 	
 }

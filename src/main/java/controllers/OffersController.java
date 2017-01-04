@@ -27,10 +27,10 @@ public class OffersController{
 		JdbcTemplate jt = new JdbcTemplate(dataSource);
 		String SQL = "SELECT * FROM oferty";
 		
-		List<OffersDTO> oferta = jt.query(SQL, new OffersMapper());
+		List<OffersDTO> listaOfert = jt.query(SQL, new OffersMapper());
 		
-		//returnedView.addObject("message", "hello");
-
+		returnedView.addObject("listaOfert", listaOfert);
+		
 		returnedView.setViewName("oferty");
 		return returnedView;
     }
