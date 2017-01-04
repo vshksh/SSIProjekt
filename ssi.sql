@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 02 Sty 2017, 20:36
+-- Czas generowania: 04 Sty 2017, 01:31
 -- Wersja serwera: 10.1.16-MariaDB
 -- Wersja PHP: 5.6.24
 
@@ -38,6 +38,13 @@ CREATE TABLE `klient` (
   `adres_kod_pocztowy` int(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Zrzut danych tabeli `klient`
+--
+
+INSERT INTO `klient` (`konta_login`, `imie`, `nazwisko`, `nr_tel`, `email`, `adres_nr`, `adres_ulica`, `adres_miasto`, `adres_kod_pocztowy`) VALUES
+('user', 'Damian', 'Borys', '1233112211', 'damian@borys.pl', '12', 'Szlak', 'Kraków', 31333);
+
 -- --------------------------------------------------------
 
 --
@@ -69,12 +76,19 @@ INSERT INTO `konta` (`login`, `haslo`, `typ`) VALUES
 CREATE TABLE `oferty` (
   `id` int(11) NOT NULL,
   `nazwa` varchar(30) DEFAULT NULL,
-  `opis` varchar(100) DEFAULT NULL,
+  `link` varchar(100) DEFAULT NULL,
   `cena` int(11) NOT NULL,
-  `data_start` date NOT NULL,
-  `data_koniec` date DEFAULT NULL,
   `id_pokoju` smallint(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `oferty`
+--
+
+INSERT INTO `oferty` (`id`, `nazwa`, `link`, `cena`, `id_pokoju`) VALUES
+(1, 'Najnowsza oferta', '/resources/img/1.jpg', 25, 1),
+(2, 'Najta?sza oferta', '/resources/img/2.jpg', 10, 2),
+(3, 'Najlepsza oferta', '/resources/img/3.jpg', 30, 3);
 
 -- --------------------------------------------------------
 
@@ -88,6 +102,15 @@ CREATE TABLE `pokoj` (
   `standard` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Zrzut danych tabeli `pokoj`
+--
+
+INSERT INTO `pokoj` (`id`, `ilosc_miejsc`, `standard`) VALUES
+(1, 4, 1),
+(2, 3, 2),
+(3, 7, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -96,9 +119,17 @@ CREATE TABLE `pokoj` (
 
 CREATE TABLE `pracownik` (
   `login` varchar(20) NOT NULL,
-  `imie` int(20) NOT NULL,
-  `nazwisko` int(20) NOT NULL
+  `imie` varchar(20) NOT NULL,
+  `nazwisko` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `pracownik`
+--
+
+INSERT INTO `pracownik` (`login`, `imie`, `nazwisko`) VALUES
+('kierownik', 'Jakub', 'Maciej'),
+('worker', 'Jerzy', 'Jerzy');
 
 -- --------------------------------------------------------
 
@@ -110,12 +141,19 @@ CREATE TABLE `rezerwacje` (
   `id` int(11) NOT NULL,
   `data_start` date NOT NULL,
   `data_koniec` date NOT NULL,
-  `data_zrobienia` date NOT NULL,
+  `data_dokonania` date NOT NULL,
   `data_zaplaty` date DEFAULT NULL,
   `ilosc_osob` tinyint(4) NOT NULL,
   `id_oferty` int(11) NOT NULL,
   `stan` tinyint(4) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `rezerwacje`
+--
+
+INSERT INTO `rezerwacje` (`id`, `data_start`, `data_koniec`, `data_dokonania`, `data_zaplaty`, `ilosc_osob`, `id_oferty`, `stan`) VALUES
+(1, '2016-12-20', '2016-12-22', '2016-12-01', '2016-12-04', 3, 1, 1);
 
 --
 -- Indeksy dla zrzutów tabel

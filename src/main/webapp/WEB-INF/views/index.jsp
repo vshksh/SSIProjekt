@@ -37,7 +37,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<c:url value="/rejestracja" />">Rejestracja</a>
 						</li>
-						<li><a href="<c:url value="/logowanie" />">Zaloguj</a></li>
+						<li><a href="<c:url value="/login" />">Zaloguj</a></li>
 					</ul>
 				</div>
 
@@ -48,6 +48,9 @@
 					</h1>
 				</div>
 				<div class="jumbotron">
+								<c:if test="${not empty pageContext.request.userPrincipal.name}">
+					<p>Cześć, ${pageContext.request.userPrincipal.name}!<p>
+				</c:if>
 					<p>Witamy na stronie naszego hostelu. Zapoznaj się z
 						proponowanymi ofertami ponizej, bądź skorzystaj z wyszukiwarki.</p>
 				</div>
@@ -66,9 +69,7 @@
 										src="http://ucd.hwstatic.com/propertyimages/9/90278/1.jpg">
 									<div class="carousel-caption">
 										<h4>Pokój 1</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Miło, tanio i przyjemnie.</p>
 									</div>
 								</div>
 								<div class="item">
@@ -76,9 +77,7 @@
 										src="http://ucd.hwstatic.com/propertyimages/6/65464/4.jpg">
 									<div class="carousel-caption">
 										<h4>Pokój 2</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Nieco drożej, ale za to i nieco przyjemniej.</p>
 									</div>
 								</div>
 								<div class="item">
@@ -86,9 +85,7 @@
 										src="http://ucd.hwstatic.com/propertyimages/1/15170/30.jpg">
 									<div class="carousel-caption">
 										<h4>Pokój 3</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Bo w życiu piękne są tylko chwile.</p>
 									</div>
 								</div>
 							</div>
@@ -112,9 +109,7 @@
 										src="http://www.3darchprevision.com/wp-content/uploads/2013/09/3D-Rendition-Students-Hostel-Room-Interior-Visualization.jpg">
 									<div class="carousel-caption">
 										<h4>Pokój 4</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Komfort na wyciągnięcie ręki.</p>
 									</div>
 								</div>
 								<div class="item">
@@ -122,9 +117,7 @@
 										src="http://www.hoppo.com/assets/0000/0213/Bunk_Dorm_Room.JPG">
 									<div class="carousel-caption">
 										<h4>Pokój 5</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Wypoczynek w zasięgu Twojego portfela.</p>
 									</div>
 								</div>
 								<div class="item">
@@ -132,9 +125,7 @@
 										src="http://www.nobelhostel.com/img/double-shared/double-shared-2.png">
 									<div class="carousel-caption">
 										<h4>Pokój 6</h4>
-										<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-											quam. Donec id elit non mi porta gravida at eget metus.
-											Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p>Najwyższy standard w naszym hostelu.</p>
 									</div>
 								</div>
 							</div>

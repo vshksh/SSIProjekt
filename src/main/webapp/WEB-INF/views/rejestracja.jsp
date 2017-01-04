@@ -39,7 +39,7 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="<c:url value="/rejestracja" />">Rejestracja</a>
 							</li>
-							<li><a href="<c:url value="/rejestracja" />">Zaloguj</a></li>
+							<li><a href="<c:url value="/login" />">Zaloguj</a></li>
 						</ul>
 					</div>
 				</nav>

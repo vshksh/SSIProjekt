@@ -37,7 +37,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<c:url value="/rejestracja" />">Rejestracja</a>
 						</li>
-						<li><a href="<c:url value="/logowanie" />">Zaloguj</a></li>
+						<li><a href="<c:url value="/login" />">Zaloguj</a></li>
 					</ul>
 				</div>
 

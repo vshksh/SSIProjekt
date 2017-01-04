@@ -51,7 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/admin/**").access("hasRole('ADMIN')")//  Do tego strony ma dostêp tylko admin
 		.and()
 		  .formLogin().failureUrl("/login?error")
-                  .defaultSuccessUrl("/zalogowano")
+                  .defaultSuccessUrl("/")
 		  .usernameParameter("login").passwordParameter("haslo")
 		.and()
 		  .logout().logoutSuccessUrl("/login?logout")
